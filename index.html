@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+    <link rel="stylesheet" href="../css/modules.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="navbar"></header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="page-title">Modules</h1>
+
+        <section class="modules-grid">
+            <!-- Module Card -->
+            <div class="module-card">
+                <div class="module-number" style="border-color: #2ecc71;">1</div>
+                <h2>
+                    <a href="modules/budgeting.html">Budgeting 101</a>
+                </h2>
+                <p class="chapter-count">7 chapters</p>
+                <p class="description">
+                    Budgeting isn’t about saying no — it’s about learning how to say yes to what truly matters.
+                    It’s not restriction, it’s direction — the skill that turns income into progress.
+                </p>
+                <div class="links">
+                    <a href="modules/budgeting.html">View module</a>
+                    <a href="modules/budgeting.html">Watch videos</a>
+                </div>
+            </div>
+
+
+            <div class="module-card">
+                <div class="module-number" style="border-color: #3498db;">2</div>
+                <h2>
+                    <a href="modules/introduction-to-stock-market.html">Introduction to Stock Market</a>
+                </h2>
+                <p class="chapter-count">8 chapters</p>
+                <p class="description">
+                    Imagine your favourite coffee brand — say, Tata Coffee — wants to open 500 new outlets across India.
+                    That kind of expansion needs money — to buy land, build stores, hire staff, and market the
+                    brand. Instead of borrowing a huge amount from banks, the company can raise money by offering
+                    ownership stakes — called shares — to people like you and me.
+                </p>
+                <div class="links">
+                    <a href="modules/introduction-to-stock-market.html">View module</a>
+                    <a href="modules/introduction-to-stock-market.html">Watch videos</a>
+                </div>
+            </div>
+
+            <div class="module-card">
+                <div class="module-number" style="border-color: #f1c40f;">3</div>
+                <h2>
+                    <a href="modules/money.html">Money 101</a>
+                </h2>
+                <p class="chapter-count">8 chapters</p>
+                <p class="description">
+                    Long before coins and cards, people traded what they had for what they needed — a fisherman swapped
+                    his catch for a farmer’s grain. But barter had a flaw: what if the farmer didn’t want fish that day?
+                </p>
+                <div class="links">
+                    <a href="modules/money.html">View module</a>
+                    <a href="modules/money.html">Watch videos</a>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <!-- === JS === -->
+    <script src="../js/main.js" defer></script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadComponent("navbar", "header.html").then(() => {
+                initNav();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

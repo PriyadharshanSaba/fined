@@ -1,0 +1,129 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #0065ff;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Module header section */
+.module-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.module-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  border-top: 4px solid;
+  padding-top: 0.3rem;
+}
+
+.module-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.module-links a {
+  text-decoration: none;
+  color: #0065ff;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+.module-links a.download {
+  color: #0065ff;
+  margin-left: auto;
+  float: right;
+}
+
+.module-links a:hover {
+  text-decoration: underline;
+}
+
+/* Divider line */
+.divider {
+  margin: 1.8rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Chapter list */
+.chapters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chapter h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.chapter p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .module-number {
+    font-size: 2.2rem;
+  }
+  .module-info h1 {
+    font-size: 1.6rem;
+  }
+}
